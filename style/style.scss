@@ -1,0 +1,58 @@
+.table{
+  width: 100%;
+  border-collapse: collapse;
+  &__small-column{
+    width: 15%;
+  }
+}
+.firstRow, .secondRow, .thirdRow{
+  cursor: pointer;
+}
+th, td{
+  border: 1px solid black;
+  vertical-align: top;
+}
+.active{
+  background: rgba(130, 180, 130, 0.66);
+  &:after{
+    content: ' ';
+    background: rgba(130, 180, 130, 0.66);
+    position: absolute;
+    right: -20px;
+    top: 15px;
+    box-sizing: border-box;
+    border: 10px solid white;
+    border-left-color: rgb(4, 191, 4);
+  }
+}
+.new-row{
+  cursor: pointer;
+  width: 600px;
+  position: relative;
+  &__description{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__email, &__phone{
+    margin: 15px 0 0 0;
+    font-size: 12px;
+  }
+}
+.detail{
+
+  padding: 10px 10px 10px 30px;
+  position: relative;
+  &__text{
+    margin: 5px;
+    font-size: 13px;
+  }
+  &__close{
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    cursor: pointer;
+    background: rgba(130, 180, 130, 0.66);
+  }
+}
